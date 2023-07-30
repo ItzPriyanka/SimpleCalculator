@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="cal.css">
+   <title>Calulator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+   <div class="main">
+      <input type="text" id = "res">
+      
+      <div class="btn">
+        <!-- <select id="exponent">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select> -->
+          
+        
+       
+          <input type="button" value = '!' onclick = "Factorial('!')">
+          <input type="button" value = 'C' onclick = "Clear()">
+          <input type="button" value = '%' onclick = "Solve('%')">
+          <input type="button" value = '←' onclick ="Back('←')">
+          <input type="button" value = '/' onclick = "Solve('/')">
+          
+          <br>
+          <input type="button" value='^' onclick="showExponentInput()">
+          <input type="button" value = '7' onclick = "Solve('7')">
+          <input type="button" value = '8' onclick = "Solve('8')">
+          <input type="button" value = '9' onclick = "Solve('9')">
+          <input type="button" value = '*' onclick = "Solve('*')">
+          <br>
+          <input type="button" value = '√' onclick = "SquareRoot()">
+          <input type="button" value = '4' onclick = "Solve('4')">
+          <input type="button" value = '5' onclick = "Solve('5')">
+          <input type="button" value = '6' onclick = "Solve('6')">
+          <input type="button" value = '-' onclick = "Solve('-')">
+          <br>
+          <input type="button" value = '(' onclick = "Solve('(')">
+          <input type="button" value = '1' onclick = "Solve('1')">
+          <input type="button" value = '2' onclick = "Solve('2')">
+          <input type="button" value = '3' onclick = "Solve('3')">
+          <input type="button" value = '+' onclick = "Solve('+')">
+          <br>
+          <input type="button" value = ')' onclick = "Solve(')')">
+          <input type="button" value = '00'onclick = "Solve('00')">
+          <input type="button" value = '0' onclick = "Solve('0')">
+          <input type="button" value = '.' onclick = "Solve('.')">
+          <input type="button" value = '=' onclick = "Result()">
+          
+         <br>
+         <input type="text" id="exponent" style="display: none;">
+         <input type="number" id="exponent" style="display: none;">
+        
+         <input type="number" id="exponent" style="display: none;">
+        <input type="button" id="calculate-power" value='Power' onclick="calculatePower()" style="display: none;">
+        <input type="button" value='Cancel' onclick="hideExponentInput()" style="display: none;">
+ 
+ 
+ 
+ 
+      </div>
+   </div>
+   <script src = 'Cal.js' ></script>
+</body>
+</html>
